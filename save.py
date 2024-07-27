@@ -13,10 +13,3 @@ def save_products_to_files(products, excel_filename, text_filename):
         for prod in products:
             writer.writerow([prod['productTitle'], prod['productUrl'], prod['finalPrice'], prod['sales']])
 
-# Пример использования функции
-products = [
-    {'productTitle': 'Product 1', 'productUrl': 'http://example.com/1', 'finalPrice': 10.99, 'sales': 100},
-    {'productTitle': 'Product 2', 'productUrl': 'http://example.com/2', 'finalPrice': 20.99, 'sales': 150}
-]
-
-save_products_to_files(products, 'products.xlsx', 'products.txt')
